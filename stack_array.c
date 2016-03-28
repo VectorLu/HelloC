@@ -1,4 +1,5 @@
 // use array  ---> stack
+//study notes
 #include <stdio.h>
 #include <stdlib.h>
 
