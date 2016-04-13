@@ -1,4 +1,5 @@
 //将输入的整数逆序输出
+//
 #include <stdio.h>
 
 int main(){
