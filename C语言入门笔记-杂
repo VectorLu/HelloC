@@ -11,6 +11,8 @@
 	
 	~.全局变量和局部变量的变量名可以相同，但是局部变量会覆盖全局变量。
 	
+	~.C语言不支持在函数外部返回局部变量的地址，除非将变量类型设置为static。见getRandom.c
+	
 	~.数组的定义 type_name arrayname [size]
 		eg. int *point_array[10],其中int * 为变量类型，表示数组元素为 指向int类型的指针。
 	
