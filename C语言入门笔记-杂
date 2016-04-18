@@ -19,7 +19,44 @@
 	~.什么情况下我们应该使用指针？
 	  1.函数返回多个参数时，某些变量需要通过指针返回—————传入参数要保存返回的变量。
 	
-	~.union允许在相同的内存位置存储不同的数据类型。可以定义一个带有多个成员的union，但是
+	~.union允许在相同的内存位置存储不同的数据类型。可以定义一个带有多个成员的union，但是一次只能使用一个成员，不然只有
+	最后一个被初始化的数据没有被破坏。
+	
+	~.位域：
+	带有预定义宽度的变量被称为位域。位域可以存储多于 1 位的数，例如，需要一个变量来存储从 0 到 7 的值，您可以定
+	义一个宽度为 3 位的位域，如下：
+	struct
+	{
+	  unsigned int age : 3;
+	} Age;
+	上面的结构定义指示 C 编译器，age 变量将只使用 3 位来存储这个值，如果您试图使用超过 3 位，则无法完成。让我们来看下面的实例：
+	#include <stdio.h>
+	#include <string.h>
+	
+	struct
+	{
+	  unsigned int age : 3;
+	} Age;
+	
+	int main( )
+	{
+	   Age.age = 4;
+	   printf( "Sizeof( Age ) : %d\n", sizeof(Age) );
+	   printf( "Age.age : %d\n", Age.age );
+	
+	   Age.age = 7;
+	   printf( "Age.age : %d\n", Age.age );
+	
+	   Age.age = 8;
+	   printf( "Age.age : %d\n", Age.age );
+	
+	   return 0;
+	}
+	当上面的代码被编译时，它会带有警告，当上面的代码被执行时，它会产生下列结果：
+	Sizeof( Age ) : 4
+	Age.age : 4
+	Age.age : 7
+	Age.age : 0
 	
 	
 	
