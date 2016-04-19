@@ -25,6 +25,9 @@ int main()
     double n = 1;
     double minus = -1;		
     while(deltaAbsolute>0.000001){
+    //要得到精确到小数点后几位的值
+    //while(fabs(pi-3.1415926)>0.0000001){
+    //这样得到的数一直到小数点后6位都是对的，但是从第7位开始就不准确了
         n += 2;
         deltaAbsolute = 1/n;
         delta = minus*deltaAbsolute;
