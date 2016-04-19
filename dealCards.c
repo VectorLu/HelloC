@@ -1,3 +1,4 @@
+//simulate to deal a deck(52 cards)
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
