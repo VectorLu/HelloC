@@ -2,8 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc/malloc.h>
+//odd numbers is OK, even numbers is not
+//to be improved
 //in Xcode, you should #include <malloc/malloc.h>
-//big number may sometimes lead to errors(>10)
+//a big number may sometimes lead to errors(>10)
 int main()
 {
     int n;
@@ -16,7 +18,7 @@ int main()
 }
 
 void array(int n){
-    int i, j, no, num, max;
+    int i, j, index, num, max;
     int *mtrx;
     
     if(n % 2 == 0){
@@ -41,18 +43,18 @@ void array(int n){
         if(j > n - 1){
             j = 0;
         }
-        no = i * n + j;
+        index = i * n + j;
         
-        mtrx[no] = num;
+        mtrx[index] = num;
     }
     
     printf("The magic square is: ");
-    no = 0;
+    index = 0;
     for(i = 0; i < n; i++){
         printf("\n");
         for(j = 0; j < n; j++){
-            printf("%6d", mtrx[no]);
-            no++;
+            printf("%6d", mtrx[index]);
+            index++;
         }
     }
     free(mtrx);
