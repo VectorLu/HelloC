@@ -1,6 +1,8 @@
 /*use Chinese Remainder Theorem to solve numbers from 1~99*/
+//in MacOS, remainder may be a reserved word, should change a name
 #include <stdio.h>
 void remainder(int n);
+
 int main()
 {
 	int i;
