@@ -1,5 +1,5 @@
-# HelloGithub
-the first step to build my own github
+# HelloC
+the first step to study C
 ```C
 printf("Hello C!\n");
 ```
