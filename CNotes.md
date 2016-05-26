@@ -1,4 +1,4 @@
-1. variable initialization
+0. variable initialization
 ```C
 int n = 1;  
 int m = 1, n = 2;
