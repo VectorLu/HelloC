@@ -1,6 +1,7 @@
 //用指向字符串的指针数组来存储字符串列表
 //test
 
+//terminal test
 #include <stdio.h>
 
 const int MAX = 4;
