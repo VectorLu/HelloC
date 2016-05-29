@@ -1,4 +1,5 @@
 //用指向字符串的指针数组来存储字符串列表
+//test
 
 #include <stdio.h>
 
@@ -14,6 +15,6 @@ int main() {
     for(int i=0; i < 4; i++){
         printf("%s\n", char_string[i]);
     }
-    
+
     return 0;
 }
