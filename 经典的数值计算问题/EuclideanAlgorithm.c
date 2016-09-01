@@ -1,5 +1,5 @@
 // use Euclidean algorithm to calculate
-//greatest common divisor and largest common multiple
+//greatest common divisor and lowest common multiple
 #include <stdio.h>
 
 int main(){
