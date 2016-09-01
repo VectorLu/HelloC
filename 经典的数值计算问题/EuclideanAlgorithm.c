@@ -22,8 +22,8 @@ int main(){
             " is %5d.\n", m, n, greatest_common_divisor);
     
     lowest_common_multiple = m * n /greatest_common_divisor;
-    printf("The largest common multiple of %5d and %5d"
-           " is %5d.\n", m, n, largest_commo_multiple);
+    printf("The lowest common multiple of %5d and %5d"
+           " is %5d.\n", m, n, lowest_common_multiple);
     
     return 0;
 }
