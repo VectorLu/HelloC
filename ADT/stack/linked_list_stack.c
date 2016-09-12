@@ -65,6 +65,10 @@ void pop(void)
     first_node = stack;
     stack = first_node->next;
     free(first_node);
+    /*
+    ** the code in C and Pointers doesn't point to NULL
+    ** BUT I think it is neccessaty
+    */
     first_node = NULL;
 }
 
