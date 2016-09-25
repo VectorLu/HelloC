@@ -6,7 +6,6 @@
 */
 
 #include "stack.h"
-#include <assert.h>
 
 #define STACK_SIZE 100
 

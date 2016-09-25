@@ -2,7 +2,9 @@
 ** stack.h
 ** an interface of a stack module
 */
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
 /* define the type that the stack can save
 ** the type can be modified to satify the requirement
 */

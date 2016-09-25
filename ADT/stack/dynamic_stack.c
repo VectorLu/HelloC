@@ -12,10 +12,7 @@
 */
 
 #include "stack.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <malloc.h>
-#include <assert.h>
+
 /*
 ** the array to store the stack element
 ** the pointer to point the top element of the stack
